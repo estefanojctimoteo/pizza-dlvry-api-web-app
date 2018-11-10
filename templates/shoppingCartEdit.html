@@ -1,0 +1,49 @@
+<h1>Shopping Cart Item Details</h1>
+<a class="backButton" href="/shoppingcart/all">Back</a>
+<hr />
+
+<h2>Edit the item details</h2>
+
+<div class="formWrapper">
+  <form id="shoppingCartEdit1" action="/api/shoppingcart" method="PUT">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Your Changes Have Been Saved</div>
+    <input class="hiddenIdInput"  type="hidden" name="uid" />
+    <input class="hiddenEmailInput" type="hidden" name="uemail" />
+
+    <table id="shoppingCartItemTable">
+      <tr>
+        <th>ID</th>
+        <th>Item</th>
+        <th>Category</th>
+        <th class="th80px">Unit Price</th>
+        <th class="th80px">Quantity</th>
+      </tr>
+
+    </table> 
+    
+
+    <hr />
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save Changes</button>
+    </div>
+  </form>
+</div>
+
+
+<hr />
+<h2>Remove The Item</h2>
+<div class="formWrapper">
+  <form id="shoppingCartEdit2" action="/api/shoppingcart" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <div class="formError"></div>
+    <div class="warning">Warning: This action cannot be undone. Dont click this button on accident!</div>
+    <input class="hiddenIdInput" type="hidden" name="uid" />
+    <input class="hiddenEmailInput" type="hidden" name="uemail" />
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta red">Delete Item</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+<h1>Menu - Ask Items to Your Shopping Cart</h1>
+<h2></h2>
+<a class="backButton" href="/shoppingcart/all">Back</a>
+<hr /> 
+
+<div class="formWrapper">
+  <form id="shoppingCartCreate" action="/api/shoppingcart" method="POST">
+    <div class="formError"></div>
+    <input class="hiddenEmailInput" type="hidden" name="uemail" />
+
+    <table id="shoppingCartListTable">
+      <tr>
+        <th>Item</th>
+        <th>Category</th>
+        <th class="th80px">Unit Price</th>
+        <th class="inputQuantity">Quantity</th>        
+      </tr>
+      
+    </table> 
+        
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Confirm Item(s)</button>
+    </div>
+  </form>
+</div>

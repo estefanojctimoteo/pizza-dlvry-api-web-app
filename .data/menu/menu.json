@@ -1,0 +1,5 @@
+{"menu":[
+  {"id":"1","category":"food","description":"pizza","price":"3.00"},
+  {"id":"2","category":"beverage","description":"cola","price":"2.00"},
+  {"id":"3","category":"dessert","description":"cake","price":"1.00"}
+]}
